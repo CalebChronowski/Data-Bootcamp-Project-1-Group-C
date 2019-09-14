@@ -1,0 +1,21 @@
+#GIT INSTRUCTIONS
+
+Make the git repository on github
+
+Clone it to a local machine
+
+	git clone git@git.address.here
+
+Put the files that you need in the folder on your local machine
+
+Track the new files in git
+	
+	git add .
+
+Commit those files
+
+	git commit -m "your message here"
+
+Push the file upstream
+
+	git push git@git.address.here

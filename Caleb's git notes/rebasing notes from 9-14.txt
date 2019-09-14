@@ -1,0 +1,25 @@
+Additional reading
+	git version control
+	git workflow
+
+Masters and branches
+	-The master represents the complete version with every merged branch that has been committed. Each number is a new version.
+	
+	-Branches can be made off the master. They are copies on the repository. If you commit a local branch to the repository, it's on the 			branch, but it is not on the master branch. This happens when you merge the branch to master.
+
+	-If someone merges a branch before you're ready to merge your branch, then the updated version is named after a letter.
+	
+	-When you merge and there are parity issues, the most recent merger gets to decide whose code stays and whose code gets overwritten.
+
+General workflow. Merge your branch to the master everyone is on
+	#rebase your master so your branch shares the same historical starting point
+	(master) $ git pull --rebase
+	
+	(master) $ git checkout mybranch
+
+	(my_branch) $ git merge master
+
+	(my_branch) $ git checkout master
+
+	#You can't merge until the branch has the same starting point as what is the active master
+	(my_branch) $ git merge mybranch
